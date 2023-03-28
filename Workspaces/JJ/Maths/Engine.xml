@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Maths Locale="English_United States.1252" DefaultLocale="C" Id="Engine">
+ <MathConstants>
+  <MathConstant Name="Damper Smoothing" Value="10" Unit=""/>
+  <MathConstant Name="damper stroke" Value="47" Unit="mm"/>
+  <MathConstant Name="Front Spring Stiffenss" Value="52.38" Unit="N/mm"/>
+  <MathConstant Name="Front track" Value="1600" Unit="mm"/>
+  <MathConstant Name="Motion Ratio" Value="1" Unit=""/>
+  <MathConstant Name="Rear Spring Stiffness" Value="52.38" Unit="N/mm"/>
+  <MathConstant Name="Rear track" Value="1600" Unit="mm"/>
+ </MathConstants>
+</Maths>

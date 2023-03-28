@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<Maths Locale="English_United States.1252" DefaultLocale="C" Id="User">
+ <MathConstants>
+  <MathConstant Name="Damper Smoothing" Value="10" Unit=""/>
+  <MathConstant Name="damper stroke" Value="47" Unit="mm"/>
+  <MathConstant Name="Front Spring Stiffenss" Value="52.38" Unit="N/mm"/>
+  <MathConstant Name="Front track" Value="1600" Unit="mm"/>
+  <MathConstant Name="Motion Ratio" Value="1" Unit=""/>
+  <MathConstant Name="Rear Spring Stiffness" Value="52.38" Unit="N/mm"/>
+  <MathConstant Name="Rear track" Value="1600" Unit="mm"/>
+ </MathConstants>
+ <MathItems>
+  <MathExpression Id="FL Damper Postion" DisplayUnit="mm" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="'Front Spring Stiffenss' [N/mm] / ( 'Suspension Damper Force Front Left Force' [N] / 'Motion Ratio' [] )" SampleRate="0" Unit="mm"/>
+  <MathExpression Id="FR Damper Postion" DisplayUnit="mm" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="'Front Spring Stiffenss' [N/mm] / ( 'Suspension Damper Force Front Right Force' [N] / 'Motion Ratio' [] )" SampleRate="0" Unit="mm"/>
+  <MathExpression Id="RL damper postion Smooted" DisplayUnit="mm" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="smooth('RL Damper Postion' [mm], 'Damper Smoothing' [])" SampleRate="0" Unit="mm"/>
+  <MathExpression Id="RR damper postion Smoothed" DisplayUnit="mm" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="smooth('RR damper postion' [mm], 'Damper Smoothing' [])" SampleRate="0" Unit="mm"/>
+  <MathExpression Id="FL damper postion Smooted" DisplayUnit="mm" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="smooth('Damper Pos FL' [mm],'Damper Smoothing' [])" SampleRate="0" Unit="mm"/>
+  <MathExpression Id="FR damper postion Smooted" DisplayUnit="mm" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="smooth('Damper Pos FR' [mm],'Damper Smoothing' [])" SampleRate="0" Unit="mm"/>
+  <MathExpression Id="Wheel movement FL" DisplayUnit="mm" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="'FL damper postion Smooted' [mm] * 'Motion Ratio' []" SampleRate="0" Unit="mm"/>
+  <MathExpression Id="Wheel movement RL" DisplayUnit="mm" DisplayDPS="2" DisplayColorIndex="4" Interpolate="1" Script="'RL damper postion Smooted' [mm]*'Motion Ratio' []" SampleRate="0" Unit="mm"/>
+  <MathExpression Id="Wheel movement FR" DisplayUnit="mm" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="'FR damper postion Smooted' [mm]*'Motion Ratio' []" SampleRate="0" Unit="mm"/>
+  <MathExpression Id="Wheel movement RR" DisplayUnit="mm" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="'RR damper postion Smoothed' [mm]*'Motion Ratio' []" SampleRate="0" Unit="mm"/>
+  <MathExpression Id="Front roll angle" DisplayUnit="deg" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="atan(('Wheel movement FL' [mm]-'Wheel movement FR' [mm])/'Front track' [mm])" SampleRate="0" Unit="deg"/>
+  <MathExpression Id="Rear roll angle" DisplayUnit="deg" DisplayDPS="2" DisplayColorIndex="6" Interpolate="1" Script="atan(( 'Wheel movement RL' [mm] - 'Wheel movement RR' [mm] ) / 'Rear track' [mm])" SampleRate="0" Unit="rad"/>
+  <MathExpression Id="Front roll stiffness" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="'Front roll angle' [deg] / 'Vehicle Acceleration Lateral:f7' [G]" SampleRate="0" Unit=""/>
+  <MathExpression Id="Rear roll stiffness" DisplayDPS="2" DisplayColorIndex="6" Interpolate="1" Script="'Rear roll angle' [deg] / 'Vehicle Acceleration Lateral' [G]" SampleRate="0" Unit=""/>
+  <MathExpression Id="Brake pressure efficency" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="choose('Vehicle Acceleration Longitudinal' [G] &lt; 0.5 AND ( 'Brake Pressure Front' [psi] + 'Brake Pressure Rear' [bar] ) &gt;= 10, abs('Vehicle Acceleration Longitudinal' [G] / ( 'Brake Pressure Front' [bar] + 'Brake Pressure Rear' [bar] )), invalid()) * 100" SampleRate="0" Unit=""/>
+  <MathExpression Id="RL Damper Postion" DisplayUnit="mm" DisplayDPS="2" DisplayColorIndex="4" Interpolate="1" Script="( ( 'damper stroke' [mm] ) / 100 ) * 'Suspension Damper Position Rear Left' [mm]" SampleRate="0" Unit="mm"/>
+  <MathExpression Id="RR Damper Postion" DisplayUnit="mm" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="( ( 'damper stroke' [mm] ) / 100 ) * 'Suspension Damper Position Rear Right' [mm]" SampleRate="0" Unit="mm"/>
+  <MathExpression Id="Damper Veloicty RR" DisplayUnit="mm/s" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="derivative('RR Damper Postion' [mm])" SampleRate="0" Unit="mm/s"/>
+  <MathExpression Id="Damper Veloicty RL" DisplayUnit="mm/s" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="derivative('RL Damper Postion' [mm])" SampleRate="0" Unit="mm/s"/>
+  <MathExpression Id="Vehical Acceleration Magnitude" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="sqrt(( sqr('Vehicle Acceleration Longitudinal' [G]) + sqr('Vehicle Acceleration Lateral' [G]) ))" SampleRate="0" Unit="G"/>
+  <MathExpression Id="Damper Veloicty FL" DisplayUnit="mm/s" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="derivative('FL Damper Postion' [mm])" SampleRate="0" Unit="mm/s"/>
+  <MathExpression Id="Damper Veloicty FR" DisplayUnit="mm/s" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="derivative('FR Damper Postion' [mm])" SampleRate="0" Unit="mm/s"/>
+  <MathExpression Id="Average Front tire temp" DisplayUnit="C" DisplayDPS="2" DisplayColorIndex="6" Interpolate="1" Script="( choose('Tire Temperature Front Left Average' [C] &lt;= 150, 'Tire Temperature Front Left Average' [C], invalid()) + choose('Tire Temperature Front Right Average' [C] &lt;= 150, 'Tire Temperature Front Right Average' [C], invalid()) ) / ( choose('Tire Temperature Front Left Average' [C] &lt;= 150, 1, 0) + choose('Tire Temperature Front Right Average' [C] &lt;= 150, 1, 0) )" SampleRate="0" Unit="C"/>
+  <MathExpression Id="Average Rear tire temp" DisplayUnit="C" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="( choose('Tire Temperature Rear Left Average' [C] &lt;= 150, 'Tire Temperature Rear Left Average' [C], invalid()) + choose('Tire Temperature Rear Right Average' [C] &lt;= 150, 'Tire Temperature Rear Right Average' [C], invalid()) ) / ( choose('Tire Temperature Rear Left Average' [C] &lt;= 150, 1, 0) + choose('Tire Temperature Rear Right Average' [C] &lt;= 150, 1, 0) )" SampleRate="0" Unit="C"/>
+  <MathExpression Id="Steering Angle Speed" DisplayUnit="deg/s" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="derivative('Steering Angle' [deg])" SampleRate="0" Unit="deg/s"/>
+  <MathExpression Id="Coasting" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="choose(( 'Brake Pressure Front' [psi] &lt;= 5 AND 'Brake Pressure Rear' [psi] &lt;= 5 ) OR 'Throttle Pedal' [%] &lt;= 10, 1, invalid())" SampleRate="0" Unit=""/>
+  <MathExpression Id="Crossing" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="choose(( 'Brake Pressure Front' [psi] &gt;= 5 AND 'Brake Pressure Rear' [psi] &gt;= 5 ) OR 'Throttle Pedal' [%] &gt;= 10, 1, invalid())" SampleRate="0" Unit=""/>
+  <MathExpression Id="Steering Intergral" DisplayUnit="deg" DisplayDPS="2" DisplayColorIndex="5" Interpolate="1" Script="integrate(abs('Steering Angle' [deg]), 'Corr Speed' [km/h] &gt;= 5 AND 'Engine Speed' [rpm] &gt;= 3000, range_change(&quot;Outings:Laps&quot;))" SampleRate="0" Unit="deg"/>
+  <MathRegression Name="Rear Roll Stiffnes" X="Vehicle Acceleration Lateral" Y="Rear roll angle" Type="0" Order="2" Range="1" RangeGroupName="Outings:Laps" ZeroIntercept="1">
+   <Outputs>
+    <Output Enabled="0" Degree="0" Suffix="B"/>
+    <Output Enabled="1" Degree="1" Suffix="A"/>
+    <Output Enabled="0" Degree="-1" Suffix="R2"/>
+   </Outputs>
+  </MathRegression>
+  <MathRegression Name="Front Roll Stiffnes" X="Vehicle Acceleration Lateral" Y="Rear roll angle" Type="0" Order="2" Range="1" RangeGroupName="Outings:Laps" ZeroIntercept="1">
+   <Outputs>
+    <Output Enabled="0" Degree="0" Suffix="B"/>
+    <Output Enabled="1" Degree="1" Suffix="A"/>
+    <Output Enabled="0" Degree="-1" Suffix="R2"/>
+   </Outputs>
+  </MathRegression>
+  <MathExpression Id="FL Lockup" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="choose('Wheel Speed Front Left' [km/h] == 0 AND 'Engine Speed' [rpm] &gt; 0 AND ( 'Wheel Speed Front Left' [km/h] + 'Wheel Speed Front Right' [km/h] + 'Wheel Speed Rear Left' [km/h] + 'Wheel Speed Rear Right' [km/h] ) &gt; 1, 1, invalid())" SampleRate="0" Unit=""/>
+  <MathExpression Id="FR Lockup" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="choose('Wheel Speed Front Right' [km/h] == 0 AND 'Engine Speed' [rpm] &gt; 0 AND ( 'Wheel Speed Front Left' [km/h] + 'Wheel Speed Front Right' [km/h] + 'Wheel Speed Rear Left' [km/h] + 'Wheel Speed Rear Right' [km/h] ) &gt; 1, 1, invalid())" SampleRate="0" Unit=""/>
+  <MathExpression Id="RR Lockup" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="choose('Wheel Speed Rear Right' [km/h] == 0 AND 'Engine Speed' [rpm] &gt; 0 AND ( 'Wheel Speed Front Left' [km/h] + 'Wheel Speed Front Right' [km/h] + 'Wheel Speed Rear Left' [km/h] + 'Wheel Speed Rear Right' [km/h] ) &gt; 1, 1, invalid())" SampleRate="0" Unit=""/>
+  <MathExpression Id="RL Lockup" DisplayDPS="2" DisplayColorIndex="4" Interpolate="1" Script="choose('Wheel Speed Rear Left' [km/h] == 0 AND 'Engine Speed' [rpm] &gt; 0 AND ( 'Wheel Speed Front Left' [km/h] + 'Wheel Speed Front Right' [km/h] + 'Wheel Speed Rear Left' [km/h] + 'Wheel Speed Rear Right' [km/h] ) &gt; 1, 1, invalid())" SampleRate="0" Unit=""/>
+  <MathExpression Id="smoothed  lateral accel" DisplayUnit="G" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" EnumerationName="" Script="smooth('Vehicle Acceleration Lateral' [G], 0.25)" SampleRate="0" Unit="G"/>
+  <MathExpression Id="3rd speed ideal limit" DisplayUnit="rpm" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" EnumerationName="" Script="choose('Gear' &gt;= 3 AND 'Engine Speed' [rpm] &gt;= 10150, 'Engine Speed' [rpm], invalid())" SampleRate="0" Unit="rpm"/>
+  <MathExpression Id="3rd speed limiter" DisplayUnit="rpm" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" EnumerationName="" Script="choose('Gear' &gt;= 3 AND 'Engine Speed' [rpm] &gt;= 11000, 'Engine Speed' [rpm], invalid())" SampleRate="0" Unit="rpm"/>
+  <MathExpression Id="4th gear engine speed" DisplayUnit="rpm" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" EnumerationName="" Script="choose('Gear' &gt;= 3, 'Engine Speed' [rpm], invalid())" SampleRate="0" Unit="rpm"/>
+  <MathExpression Id="distance reset" DisplayUnit="" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" EnumerationName="" Script="integrate('Corr Speed' [m/s], 1, range_change(&quot;Outings:Laps&quot;))" SampleRate="0" Unit=""/>
+ </MathItems>
+</Maths>
