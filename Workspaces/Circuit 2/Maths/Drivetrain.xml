@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Maths Locale="English_United States.1252" DefaultLocale="C" Id="Drivetrain">
+ <MathConstants>
+  <MathConstant Name="Damper Smoothing" Value="10" Unit=""/>
+  <MathConstant Name="damper stroke" Value="47" Unit="mm"/>
+  <MathConstant Name="Front Spring Stiffenss" Value="52.38" Unit="N/mm"/>
+  <MathConstant Name="Front track" Value="1600" Unit="mm"/>
+  <MathConstant Name="Motion Ratio" Value="1" Unit=""/>
+  <MathConstant Name="Rear Spring Stiffness" Value="52.38" Unit="N/mm"/>
+  <MathConstant Name="Rear track" Value="1600" Unit="mm"/>
+ </MathConstants>
+ <MathItems>
+  <MathExpression Id="Brake pressure efficency" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="choose('Vehicle Acceleration Longitudinal' [G] &lt; 0.5 AND ( 'Brake Pressure Front' [psi] + 'Brake Pressure Rear' [bar] ) &gt;= 10, abs('Vehicle Acceleration Longitudinal' [G] / ( 'Brake Pressure Front' [bar] + 'Brake Pressure Rear' [bar] )), invalid()) * 100" SampleRate="0" Unit=""/>
+  <MathExpression Id="Coasting" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="choose(( 'Brake Pressure Front' [psi] &lt;= 5 AND 'Brake Pressure Rear' [psi] &lt;= 5 ) OR 'Throttle Pedal' [%] &lt;= 10, 1, invalid())" SampleRate="0" Unit=""/>
+  <MathExpression Id="Crossing" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="choose(( 'Brake Pressure Front' [psi] &gt;= 5 AND 'Brake Pressure Rear' [psi] &gt;= 5 ) OR 'Throttle Pedal' [%] &gt;= 10, 1, invalid())" SampleRate="0" Unit=""/>
+  <MathExpression Id="Throtle Aggression" DisplayUnit="%/s" DisplayDPS="2" DisplayColorIndex="2" Interpolate="1" Script="choose(derivative('Throttle Pedal' [%], 0.05) &gt;= 5, derivative('Throttle Pedal' [%], 0.05), invalid())" SampleRate="0" Unit="%/s"/>
+  <MathExpression Id="Calculated Input Shaft Speed" DisplayUnit="rpm" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="'Engine Speed' [rpm] / ( 76 / 36 )" SampleRate="0" Unit="rpm"/>
+ </MathItems>
+</Maths>
