@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Maths Locale="English_United States.1252" DefaultLocale="C" Id="Internal" Flags="196">
+ <MathItems>
+  <MathPlugin ProgId="MoTeC.GPSMaths.1.0" Params="V2:GPS Latitude:GPS Longitude:GPS Speed:1:1:a:0:0.8:[GPS Heading;GPS Time]:0:GPS Sats Used:0::0:0:[]:0:GPS Date:GPS Time:0"/>
+ </MathItems>
+</Maths>
