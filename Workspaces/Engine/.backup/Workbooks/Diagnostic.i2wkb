@@ -1,0 +1,917 @@
+<?xml version="1.0"?>
+<Workbook Locale="English_United States.1252" DefaultLocale="C" Version="200" Name="Diagnostic" Profile="Engine" Active="Worksheets">
+ <Worksheets Version="100" Name="Worksheets" PosPC="0,0,1000,1000" Active="Ref/Sync">
+  <Worksheet Version="200" Name="Ref/Sync" LinkTo="Data" LockByGPSTime="0">
+   <Controls Active="Time/Distance Graph">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="0" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="0" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="" BandMode="0" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 2">
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="255"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Engine Synchronisation Position Diagnostic">
+        <Trace Id="Engine Speed Reference Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Engine Speed Reference State" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Engine Synchronisation Pin Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Engine Synchronisation Position Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Engine Synchronisation State" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 2" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="255" BottomEdge="499"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Engine Speed Reference Tooth Pitch">
+        <Trace Id="Engine Speed Reference Tooth Pitch" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 3" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="499" BottomEdge="750"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Engine Synchronisation Voltage Minimum">
+        <Trace Id="Engine Synchronisation Voltage Maximum" DisplayUnit="V" DisplayDPS="3" Visible="1"/>
+        <Trace Id="Engine Synchronisation Voltage Minimum" DisplayUnit="V" DisplayDPS="3" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 4" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="750" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Engine Speed">
+        <Trace Id="Engine Speed" DisplayUnit="rpm" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="Drive By Wire" LinkTo="Data" LockByGPSTime="0">
+   <Controls Active="Time/Distance [1]">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance [1]" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="0" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="0" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="" BandMode="0" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 2">
+      <Graph Name="Group 3" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="249"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Engine RPM">
+        <Trace Id="Engine Speed" DisplayUnit="rpm" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Engine RPM" DisplayUnit="rpm" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 5" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="249" BottomEdge="498"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Throttle Servo Bank 1 Position Sensor Tracking">
+        <Trace Id="Throttle Aim" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Position" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Servo Position" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Position" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Pedal Sensor" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Pedal Sensor Main" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Pedal Sensor Tracking" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle ETC Faults Relay Output Output Duty Cycle" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Position Sensor Tracking" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 2" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="498" BottomEdge="750"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Throttle ETC Faults Relay Output Fault Trigger">
+        <Trace Id="Throttle ETC Faults Relay Output Drive Type" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle ETC Faults Relay Output Fault State" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle ETC Faults Relay Output Fault Trigger" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle ETC Faults Relay Output Override State" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle ETC Faults Relay Output State" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Pedal Sensor Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Pedal Sensor Main Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Pedal Sensor Tracking Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Position Sensor Main Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Position Sensor Tracking Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Aim State" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="750" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Throttle Servo Bank 1 Position Sensor Tracking Voltage">
+        <Trace Id="Throttle Servo Bank 1 Position Sensor Tracking Voltage" DisplayUnit="V" DisplayDPS="3" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="Lambda" LinkTo="Data" LockByGPSTime="0">
+   <Controls Active="Time/Distance [1]">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance [1]" PosPC="0,0,1000,760" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="1" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="0" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="" BandMode="0" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 7">
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="90"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Engine Speed">
+        <Trace Id="Engine Speed" DisplayUnit="rpm" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 3" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="90" BottomEdge="228"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Throttle Servo Position">
+        <Trace Id="Throttle Position" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Servo Position" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 6" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="228" BottomEdge="307"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Inlet Manifold Pressure">
+        <Trace Id="Inlet Manifold Pressure" DisplayUnit="kPa" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 2" ScaleMode="1" ScaleMin="0.7" ScaleMax="1.3">
+       <Edges Mode="0" TopEdge="307" BottomEdge="415"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Fuel Mixture Aim">
+        <Trace Id="Exhaust Lambda" DisplayUnit="LA" DisplayDPS="3" Visible="1"/>
+        <Trace Id="Fuel Mixture Aim" DisplayUnit="LA" DisplayDPS="2" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 4" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="415" BottomEdge="578"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Fuel Timing Primary">
+        <Trace Id="Fuel Injector Primary Differential Pressure" DisplayUnit="dkPa" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Fuel Pressure" DisplayUnit="kPa" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Fuel Timing Primary" DisplayUnit="dBTDC" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 5" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="578" BottomEdge="717"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Engine Efficiency">
+        <Trace Id="Fuel Injector Primary Duty Cycle" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Engine Efficiency" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 7" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="717" BottomEdge="875"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Exhaust Lambda Diagnostic">
+        <Trace Id="Ignition Timing" DisplayUnit="dBTDC" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Fuel Cylinder 1 Primary Output Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Exhaust Lambda Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 8" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="875" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Fuel Cylinder 1 Primary Output Pulse Width 1">
+        <Trace Id="Fuel Cylinder 1 Primary Output Volume" DisplayUnit="ul" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Fuel Volume" DisplayUnit="ul" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Fuel Flow" DisplayUnit="ml/min" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Fuel Cylinder 1 Primary Output Pulse Width 1" DisplayUnit="ms" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+    <MoTeC.Bar Version="100" Name="Copy (1) of Bar [2]" Caption="Fuel Composition" PosPC="701,879,790,1000" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="0" MinimumValue="0" MaximumValue="100" Style="1,0,0" OriginStyle="1,0,0" CustomOrigin="0" ColorBanding="0" ColorBandLines="1" ColorBandLinesMode="0">
+     <GaugeData Id="Fuel Composition" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+     <ColorBandGroup>
+      <ColorBand Flags="7" Min="0.85" Max="0.95" Color="0,128,0" Visible="1"/>
+     </ColorBandGroup>
+    </MoTeC.Bar>
+    <MoTeC.Dial Version="100" Name="Dial [3]" Caption="Inlet Manifold Pressure" PosPC="270,760,460,1000" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="0" MinimumValue="0" MaximumValue="300" IndicatorColor="186,117,255" OverrideColor="0" IndicatorColorBands="0" IndicatorStyle="0" DialColorBands="1" ColorBandStyle="1" MajorDivisions="5" ScaleDPS="0">
+     <GaugeData Id="Inlet Manifold Pressure" DisplayUnit="kPa" DisplayDPS="1" Visible="1"/>
+     <ColorBandGroup/>
+    </MoTeC.Dial>
+    <MoTeC.Bar Version="100" Name="Copy (1) of Bar [3]" Caption="Fuel Injector Primary Duty Cycle" PosPC="540,760,620,1000" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="0" MinimumValue="0" MaximumValue="100" Style="2,0,0" OriginStyle="1,0,0" CustomOrigin="0" ColorBanding="0" ColorBandLines="0" ColorBandLinesMode="0">
+     <GaugeData Id="Fuel Injector Primary Duty Cycle" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+     <ColorBandGroup/>
+    </MoTeC.Bar>
+    <MoTeC.Bar Version="100" Name="Copy (1) of Copy (1) of Bar [3]" Caption="Fuel Pressure" PosPC="460,760,540,1000" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="0" MinimumValue="0" MaximumValue="999.7" Style="2,0,0" OriginStyle="1,0,0" CustomOrigin="0" ColorBanding="0" ColorBandLines="0" ColorBandLinesMode="0">
+     <GaugeData Id="Fuel Pressure" DisplayUnit="kPa" DisplayDPS="1" Visible="1"/>
+     <ColorBandGroup/>
+    </MoTeC.Bar>
+    <MoTeC.NumericGauge Version="100" Name="Numeric" Caption="Fuel Temperature" PosPC="620,879,701,998" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" DynamicFont="1">
+     <GaugeData Id="Fuel Temperature" DisplayUnit="C" DisplayDPS="1" Visible="1"/>
+     <ColorBandGroup/>
+    </MoTeC.NumericGauge>
+    <MoTeC.Bar Version="100" Name="Bar [2]" Caption="Exhaust Lambda" PosPC="620,760,790,880" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="0" MinimumValue="0.7" MaximumValue="1.1" Style="1,0,0" OriginStyle="1,0,0" CustomOrigin="0" ColorBanding="0" ColorBandLines="1" ColorBandLinesMode="0">
+     <GaugeData Id="Exhaust Lambda" DisplayUnit="LA" DisplayDPS="3" Visible="1"/>
+     <ColorBandGroup>
+      <ColorBand Flags="7" Min="0.85" Max="0.95" Color="0,128,0" Visible="1"/>
+     </ColorBandGroup>
+    </MoTeC.Bar>
+    <MoTeC.NumericGauge Version="100" Name="Copy (1) of Numeric Gauge [1]" Caption="Gear" PosPC="790,880,920,1000" ShowCaption="1" AutoCaption="1" UseDefaultFont="0" Font="-27,0,0,0,400,0,0,0,0,3,2,1,34,Tahoma" DynamicFont="1">
+     <GaugeData Id="Gear" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+     <ColorBandGroup/>
+    </MoTeC.NumericGauge>
+    <MoTeC.Bar Version="100" Name="Copy (2) of Copy (1) of Bar [3]" Caption="Ignition Timing" PosPC="920,760,1000,1000" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="0" MinimumValue="-10" MaximumValue="50" Style="2,0,0" OriginStyle="1,0,0" CustomOrigin="0" ColorBanding="0" ColorBandLines="0" ColorBandLinesMode="0">
+     <GaugeData Id="Ignition Timing" DisplayUnit="dBTDC" DisplayDPS="1" Visible="1"/>
+     <ColorBandGroup/>
+    </MoTeC.Bar>
+    <MoTeC.NumericGauge Version="100" Name="Numeric Gauge [1]" Caption="Exhaust Lambda" PosPC="790,760,920,880" ShowCaption="1" AutoCaption="1" UseDefaultFont="0" Font="-27,0,0,0,400,0,0,0,0,3,2,1,34,Tahoma" DynamicFont="1">
+     <GaugeData Id="Exhaust Lambda" DisplayUnit="LA" DisplayDPS="3" Visible="1"/>
+     <ColorBandGroup/>
+    </MoTeC.NumericGauge>
+    <MoTeC.Bar Version="100" Name="Bar [1]" Caption="Throttle Position" PosPC="190,760,270,1000" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="0" MinimumValue="0" MaximumValue="100" Style="2,0,0" OriginStyle="1,0,0" CustomOrigin="0" ColorBanding="0" ColorBandLines="0" ColorBandLinesMode="0">
+     <GaugeData Id="Throttle Position" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+     <ColorBandGroup/>
+    </MoTeC.Bar>
+    <MoTeC.Dial Version="100" Name="Dial [1]" Caption="Engine Speed" PosPC="0,760,190,1000" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="0" MinimumValue="0" MaximumValue="9000" IndicatorColor="186,117,255" OverrideColor="0" IndicatorColorBands="0" IndicatorStyle="0" DialColorBands="1" ColorBandStyle="2" MajorDivisions="8" ScaleExponent="3">
+     <GaugeData Id="Engine Speed" DisplayUnit="rpm" DisplayDPS="1" Visible="1"/>
+     <ColorBandGroup>
+      <ColorBand Flags="7" Min="7000" Max="8000" Color="255,128,64" Visible="1"/>
+     </ColorBandGroup>
+    </MoTeC.Dial>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="Sensor" LinkTo="Data" LockByGPSTime="0">
+   <Controls Active="Time/Distance [1]">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance [1]" PosPC="0,0,1000,760" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="0" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="0" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="" BandMode="0" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 2">
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="188"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Engine Speed">
+        <Trace Id="Engine RPM" DisplayUnit="rpm" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Engine Speed" DisplayUnit="rpm" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 3" ScaleMode="1" ScaleMin="0" ScaleMax="120">
+       <Edges Mode="0" TopEdge="188" BottomEdge="484"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Vehicle Speed">
+        <Trace Id="Engine Oil Temperature" DisplayUnit="C" DisplayDPS="1" Visible="0"/>
+        <Trace Id="Coolant Temperature" DisplayUnit="C" DisplayDPS="1" Visible="0"/>
+        <Trace Id="Vehicle Speed" DisplayUnit="km/h" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 4" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="484" BottomEdge="659"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Eng Oil Pres">
+        <Trace Id="Engine Oil Pressure" DisplayUnit="kPa" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Fuel Pressure" DisplayUnit="kPa" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Fuel Pres" DisplayUnit="kPa" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Eng Oil Pres" DisplayUnit="kPa" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 6" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="659" BottomEdge="815"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="PDM Battery Voltage">
+        <Trace Id="PDM Total Current" DisplayUnit="A" DisplayDPS="1" Visible="1"/>
+        <Trace Id="ECU Battery Voltage" DisplayUnit="V" DisplayDPS="3" Visible="1"/>
+        <Trace Id="PDM Battery Voltage" DisplayUnit="V" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Bat Volts ECU" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 2" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="815" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="ECU Sensor 5V0 C Diagnostic">
+        <Trace Id="Warning Source" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="ECU Sensor 5V0 A Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="ECU Sensor 5V0 B Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="ECU Sensor 5V0 C Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+    <MoTeC.Bar Version="100" Name="Bar" Caption="Fuel Temperature" PosPC="120,758,219,1000" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="0" MinimumValue="-10" MaximumValue="60" OriginStyle="1,0,0" CustomOrigin="0" ColorBanding="1" ColorBandLines="1" ColorBandLinesMode="0">
+     <GaugeData Id="Fuel Temperature" DisplayUnit="C" DisplayDPS="1" Visible="1"/>
+     <ColorBandGroup/>
+    </MoTeC.Bar>
+    <MoTeC.Bar Version="100" Name="Copy (1) of Bar [4]" Caption="Inlet Air Temperature" PosPC="220,760,310,1000" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="0" MinimumValue="-10" MaximumValue="120" Style="2,0,0" OriginStyle="1,0,0" CustomOrigin="0" ColorBanding="1" ColorBandLines="1" ColorBandLinesMode="0">
+     <GaugeData Id="Inlet Air Temperature" DisplayUnit="C" DisplayDPS="1" Visible="1"/>
+     <ColorBandGroup/>
+    </MoTeC.Bar>
+    <MoTeC.Dial Version="100" Name="Copy (2) of Dial [1]" Caption="Engine Speed" PosPC="0,759,121,1000" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="1" MinimumValue="0" MaximumValue="14000" IndicatorColor="186,117,255" OverrideColor="0" IndicatorColorBands="0" IndicatorStyle="0" DialColorBands="1" ColorBandStyle="2" MajorDivisions="7" ScaleExponent="3">
+     <GaugeData Id="Engine Speed" DisplayUnit="rpm" DisplayDPS="1" Visible="1"/>
+     <ColorBandGroup>
+      <ColorBand Flags="7" Min="12500" Max="14000" Color="255,128,64" Visible="1"/>
+     </ColorBandGroup>
+    </MoTeC.Dial>
+    <MoTeC.Dial Version="100" Name="Dial [2]" Caption="Fuel Pressure" PosPC="700,760,910,1000" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="0" MinimumValue="0" MaximumValue="999.7" IndicatorColor="64,255,64" OverrideColor="0" IndicatorColorBands="0" IndicatorStyle="0" DialColorBands="1" ColorBandStyle="1" MajorDivisions="6" ScaleDPS="0">
+     <GaugeData Id="Fuel Pressure" DisplayUnit="kPa" DisplayDPS="1" Visible="1"/>
+     <ColorBandGroup/>
+    </MoTeC.Dial>
+    <MoTeC.Dial Version="100" Name="Dial [1]" Caption="Engine Oil Pressure Oil Pressure in PSI" PosPC="490,760,700,1000" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="0" MinimumValue="0" MaximumValue="1000" IndicatorColor="186,117,255" OverrideColor="0" IndicatorColorBands="0" IndicatorStyle="0" DialColorBands="1" ColorBandStyle="1" MajorDivisions="6" ScaleDPS="0">
+     <GaugeData Id="Engine Oil Pressure Oil Pressure in PSI" DisplayUnit="psi" DisplayDPS="1" Visible="1"/>
+     <ColorBandGroup/>
+    </MoTeC.Dial>
+    <MoTeC.Bar Version="100" Name="Bar [2]" Caption="ECU Battery Voltage" PosPC="910,760,1000,1000" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="0" MinimumValue="11.4103" MaximumValue="13.8493" Style="2,0,0" OriginStyle="1,0,0" CustomOrigin="0" ColorBanding="1" ColorBandLines="1" ColorBandLinesMode="0">
+     <GaugeData Id="ECU Battery Voltage" DisplayUnit="V" DisplayDPS="3" Visible="1"/>
+     <ColorBandGroup/>
+    </MoTeC.Bar>
+    <MoTeC.Bar Version="100" Name="Copy (1) of Bar [3]" Caption="Coolant Temperature" PosPC="310,760,400,1000" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="0" MinimumValue="-20" MaximumValue="120" Style="2,0,0" OriginStyle="1,0,0" CustomOrigin="0" ColorBanding="1" ColorBandLines="1" ColorBandLinesMode="0">
+     <GaugeData Id="Coolant Temperature" DisplayUnit="C" DisplayDPS="1" Visible="1"/>
+     <ColorBandGroup/>
+    </MoTeC.Bar>
+    <MoTeC.Bar Version="100" Name="Copy (1) of Copy (1) of Bar [3]" Caption="Engine Oil Temperature" PosPC="400,760,490,1000" ShowCaption="1" AutoCaption="1" UseDefaultFont="1" ScaleMode="0" MinimumValue="-10" MaximumValue="150" Style="2,0,0" OriginStyle="1,0,0" CustomOrigin="0" ColorBanding="0" ColorBandLines="0" ColorBandLinesMode="0">
+     <GaugeData Id="Engine Oil Temperature" DisplayUnit="C" DisplayDPS="1" Visible="1"/>
+     <ColorBandGroup/>
+    </MoTeC.Bar>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="CAN Bus" LinkTo="Data" LockByGPSTime="0">
+   <Controls Active="Time/Distance Graph">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="0" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="0" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="" BandMode="0" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 5">
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="204"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Engine Synchronisation Position Diagnostic">
+        <Trace Id="Engine Speed Reference Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Engine Speed Reference State" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Engine Synchronisation Pin Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Engine Synchronisation Position Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Engine Synchronisation State" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 2" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="204" BottomEdge="398"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Engine Speed Reference Tooth Pitch">
+        <Trace Id="Engine Speed Reference Tooth Pitch" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 3" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="398" BottomEdge="600"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Engine Synchronisation Voltage Minimum">
+        <Trace Id="Engine Synchronisation Voltage Maximum" DisplayUnit="V" DisplayDPS="3" Visible="1"/>
+        <Trace Id="Engine Synchronisation Voltage Minimum" DisplayUnit="V" DisplayDPS="3" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 4" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="600" BottomEdge="799"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Engine Speed">
+        <Trace Id="Engine Speed" DisplayUnit="rpm" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 5" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="799" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="CAN Bus 3 Diagnostic">
+        <Trace Id="CAN Bus 1 Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="CAN Bus 2 Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="CAN Bus 3 Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="Dash CAN Comms" LinkTo="Data" LockByGPSTime="0">
+   <Controls Active="Time/Distance Graph">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="0" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="0" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="" BandMode="0" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 1">
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="CAN Steering Module CompoundID">
+        <Trace Id="CAN Dash CompoundID" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="CAN Steering Module CompoundID" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="Driver Buttons" LinkTo="Data" LockByGPSTime="0">
+   <Controls Active="Time/Distance Graph">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="0" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="0" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="" BandMode="0" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 1">
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Driver Switch 1 Diagnostic">
+        <Trace Id="Driver Switch 1 Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="ETC Faults" LinkTo="Data" LockByGPSTime="0">
+   <Controls Active="Time/Distance Graph">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="0" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="0" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="" BandMode="0" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 1">
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="199"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Throttle Servo Bank 1 Position Sensor Tracking">
+        <Trace Id="Throttle Position" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Position Sensor Main" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Position Sensor Tracking" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 2" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="199" BottomEdge="399"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Throttle ETC Faults Relay Output State">
+        <Trace Id="Throttle ETC Faults Relay Output Fault State" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle ETC Faults Relay Output Fault Trigger" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle ETC Faults Relay Output State" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 3" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="399" BottomEdge="600"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Throttle Servo Bank 1 Position Sensor Tracking Diagnostic">
+        <Trace Id="Throttle Servo Bank 1 Position Sensor Main Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Position Sensor Tracking Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 4" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="600" BottomEdge="800"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Throttle Servo Bank 1 Position Sensor Tracking Voltage">
+        <Trace Id="Throttle Servo Bank 1 Position Sensor Tracking Voltage" DisplayUnit="V" DisplayDPS="3" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 5" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="800" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Brake Pressure Front">
+        <Trace Id="Brake Pressure Front" DisplayUnit="psi" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="Speed" LinkTo="Data" LockByGPSTime="0">
+   <Controls Active="Time/Distance Graph">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="0" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="0" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="" BandMode="0" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 4">
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="199"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="GPS Speed">
+        <Trace Id="GPS Speed" DisplayUnit="km/h" DisplayDPS="3" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 2" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="199" BottomEdge="399"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Vehicle Speed">
+        <Trace Id="Vehicle Speed" DisplayUnit="km/h" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 3" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="399" BottomEdge="600"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Throttle Servo Bank 1 Position Sensor Tracking Diagnostic">
+        <Trace Id="ECU Diagnostic Throttle Control Miss" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Aim Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Aim State" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Pedal Sensor Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Pedal Sensor Main Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Pedal Sensor Tracking Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Position Sensor Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Position Sensor Main Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Position Sensor Tracking Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 4" ScaleMode="1" ScaleMin="0" ScaleMax="10">
+       <Edges Mode="0" TopEdge="600" BottomEdge="800"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Throttle Servo Bank 1 Diagnostic High">
+        <Trace Id="Throttle Aim" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Pedal" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Pedal Sensor Main" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Pedal Sensor Tracking" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Aim" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Control Aim" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Diagnostic High" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Diagnostic Low" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Position" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Position Sensor" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Position Sensor Main" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Position Sensor Tracking" DisplayUnit="%" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 5" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="800" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Throttle Servo Bank 1 Position Sensor Main Diagnostic Time">
+        <Trace Id="Throttle Pedal Sensor Diagnostic Time" DisplayUnit="ms" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Pedal Sensor Main Diagnostic Time" DisplayUnit="ms" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Pedal Sensor Tracking Diagnostic Time" DisplayUnit="ms" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Diagnostic Time" DisplayUnit="ms" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Position Sensor Diagnostic Time" DisplayUnit="ms" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Throttle Servo Bank 1 Position Sensor Main Diagnostic Time" DisplayUnit="ms" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="PDM" LinkTo="Data" LockByGPSTime="0">
+   <Controls Active="Time/Distance Graph">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="0" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="0" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="" BandMode="0" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 3">
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="249"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="PDM Output 8">
+        <Trace Id="PDM Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="PDM Output 1" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 2" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 3" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 4" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 5" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 6" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 7" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 8" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 9" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 10" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 11" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 12" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 13" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 14" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 15" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 16" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 17" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 18" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 19" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 20" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 21" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 22" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 23" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 24" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 25" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 26" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 27" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 28" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 29" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="PDM Output 30" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 31" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+        <Trace Id="PDM Output 32" DisplayUnit="" DisplayDPS="0" Visible="0"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 2" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="249" BottomEdge="418"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="PDM Total Current">
+        <Trace Id="PDM Total Current" DisplayUnit="A" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 3" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="418" BottomEdge="750"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Engine Speed">
+        <Trace Id="Engine Speed" DisplayUnit="rpm" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 4" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="750" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Throttle ETC Faults Relay Output Fault State">
+        <Trace Id="Throttle ETC Faults Relay Output Fault State" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="Worksheet" LinkTo="Data" LockByGPSTime="0">
+   <Controls Active="Scatter">
+    <MoTeC.Scatter Version="100" Name="Scatter" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" ActiveTrace="0" TileMode="1" TileActiveChan="0" TileAutoCols="1" TileCols="1" XChannel="ECU Uptime" ZChannel="" XScaleMode="0" YScaleMode="0" ZScaleMode="0" ShowPoints="1" ShowDensity="0" DensityBins="50" DensityFillColorMode="1" DensityFillColor1="64,64,255" DensityFillColor2="255,64,64" IntervalStat="0" IntervalStat.BinWidth="100" ShowGridLines="1" ShowGradient="0" ShowColorBinSamples="1" Style="2" Size="1" ShowLines="0" ShowRegEquation="0" LinePointMode="1" CursorStyle="3" RegressionType="0" RegressionParam="0" RegressionZero="0" RegressionDigits="3">
+     <Trace YChannel="Gear" Visible="1" YDelay="0"/>
+     <EvenWidthBandAxis PaletteMode="1" GradientMode="1" BandChanColor="210,210,210" AxisChanColor="43,255,255" Color1="64,64,255" Color2="255,64,64" ReversGradient="0" CentredBands="0" GreaterMaxBand="1" LessMinBand="1" Continuous="0" BandMode="1" DataMin="-1" DataMax="1" BandWidth="0.2" BandCount="10">
+      <ColorBand Flags="2" Min="-1" Max="-1" Color="64,64,255" Visible="1"/>
+      <ColorBand Flags="7" Min="-1" Max="-0.8" Color="64,136,255" Visible="1"/>
+      <ColorBand Flags="7" Min="-0.8" Max="-0.6" Color="64,203,255" Visible="1"/>
+      <ColorBand Flags="7" Min="-0.6" Max="-0.4" Color="64,255,236" Visible="1"/>
+      <ColorBand Flags="7" Min="-0.4" Max="-0.2" Color="64,255,169" Visible="1"/>
+      <ColorBand Flags="7" Min="-0.2" Max="0" Color="64,255,98" Visible="1"/>
+      <ColorBand Flags="7" Min="0" Max="0.2" Color="98,255,64" Visible="1"/>
+      <ColorBand Flags="7" Min="0.2" Max="0.4" Color="169,255,64" Visible="1"/>
+      <ColorBand Flags="7" Min="0.4" Max="0.6" Color="236,255,64" Visible="1"/>
+      <ColorBand Flags="7" Min="0.6" Max="0.8" Color="255,203,64" Visible="1"/>
+      <ColorBand Flags="15" Min="0.8" Max="1" Color="255,136,64" Visible="1"/>
+      <ColorBand Flags="1" Min="1" Max="1" Color="255,64,64" Visible="1"/>
+     </EvenWidthBandAxis>
+    </MoTeC.Scatter>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="Launch Diagnostics" LinkTo="Data" LockByGPSTime="0">
+   <Controls Active="Time/Distance Graph">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="0" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="0" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="" BandMode="0" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs/>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+   </Controls>
+  </Worksheet>
+  <Worksheet Version="200" Name="Worksheet (1)" LinkTo="Data" LockByGPSTime="0">
+   <Controls Active="Time/Distance Graph">
+    <MoTeC.TimeDistance Version="100" Name="Time/Distance Graph" PosPC="0,0,1000,1000" ShowCaption="0" AutoCaption="0" LinkZoom="1" ModeId="0" ShowDataLegend="1" ShowColorLegend="1" TelemetryZoom="0" TraceLineWidth="1" TracePointSize="3" TraceStyle="0" LinkCursor="1" LinkDatum="1" ShowKeyValues="1" ShowKeyStats="1" KeyMode="0" KeyPos="1" ShowGridLines="1" ShowXAxis="1" ShowXAxisScrollBar="0" ShowYAxis="1" ShowYAxisScrollBar="1" ShowMarkers="1" ShowVSP="0" ShowDeviveEvents="1" ShowBands="0" TOD.Show="0" TOD.Format.Time="%X" TOD.Format.Date="%d %b %Y" TOD.UTC="UTC Time" TOD.Offset.Type="0" TOD.Offset.Mins="0" TOD.TZ.Show="0" BandGroup="" BandMode="0" OverlapMode="0" VariancePos="0.25" VarianceAutoScale="1">
+     <Graphs ActivateChild="Group 2">
+      <Graph Name="Group 1" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="0" BottomEdge="163"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Warning Source">
+        <Trace Id="PDM Output 29" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="ECU Battery Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Fuel Pump Diagnostic" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="Warning Source" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 2" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="163" BottomEdge="330"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="PDM Output 4">
+        <Trace Id="PDM Output 11" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="PDM Output 29 Current" DisplayUnit="A" DisplayDPS="1" Visible="1"/>
+        <Trace Id="PDM Output 3" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="PDM Output 4" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 3" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="330" BottomEdge="554"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="ECU Battery Voltage">
+        <Trace Id="ECU Battery Voltage" DisplayUnit="V" DisplayDPS="3" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 4" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="554" BottomEdge="665"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Engine Speed">
+        <Trace Id="Engine Speed" DisplayUnit="rpm" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 5" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="665" BottomEdge="833"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Gear Shift Current">
+        <Trace Id="Gear Shift Current" DisplayUnit="" DisplayDPS="0" Visible="1"/>
+        <Trace Id="PDM Total Current" DisplayUnit="A" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+      <Graph Name="Group 6" ScaleMode="2" ScaleMin="0" ScaleMax="1">
+       <Edges Mode="0" TopEdge="833" BottomEdge="1000"/>
+       <Edges Mode="1" TopEdge="0" BottomEdge="1000"/>
+       <Lines>
+        <Line Index="0" Enabled="1" Value="0" Color="210,210,210"/>
+        <Line Index="1" Enabled="0" Value="0" Color="0,0,248"/>
+        <Line Index="2" Enabled="0" Value="0" Color="248,0,0"/>
+       </Lines>
+       <Traces ActiveTrace="Coolant Temperature">
+        <Trace Id="Coolant Temperature" DisplayUnit="C" DisplayDPS="1" Visible="1"/>
+       </Traces>
+      </Graph>
+     </Graphs>
+     <Cursor Version="1" Style="1" Snap="1"/>
+    </MoTeC.TimeDistance>
+   </Controls>
+  </Worksheet>
+ </Worksheets>
+</Workbook>
