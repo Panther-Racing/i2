@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Maths Locale="English_United States.1252" DefaultLocale="C" Id="Engine">
+ <MathItems>
+  <MathExpression Id="Smoothed MC flow" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="smooth('Motor Controller Coolant Flow:f0.1s' [l/min], 0.1)" SampleRate="0" Unit=""/>
+ </MathItems>
+</Maths>
