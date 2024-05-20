@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Maths Locale="English_United States.1252" DefaultLocale="C" Id="Drivetrain">
+ <MathItems>
+  <MathExpression Id="Calculated Input Shaft Speed" DisplayUnit="rpm" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="'Engine Speed' [rpm] / ( 76 / 36 )" SampleRate="0" Unit="rpm"/>
+  <MathExpression Id="Wheel Speed Differental" DisplayUnit="rpm" DisplayDPS="2" DisplayColorIndex="5" Interpolate="1" Script="choose('Brake Pressure Rear' [psi] &lt;= 50 OR ( abs('Wheel Speed Rear Left' [in/s] - 'Wheel Speed Rear Right' [in/s]) / ( 75 * 0.10472 ) ) &lt;= 10, abs('Wheel Speed Rear Left' [in/s] - 'Wheel Speed Rear Right' [in/s]) / 10, invalid())" SampleRate="0" Unit="rad/s"/>
+  <MathExpression Active="0" Id="Open Wheel Speed Diffrental" DisplayUnit="rpm" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="( ( ( 'Wheel Speed Rear Drive' [m/s] * 'Instantanius Corner Radius' [m] ) / ( 'Instantanius Corner Radius' [m] + ( 'Rear track' [m] / 2 ) ) ) - ( ( 'Wheel Speed Rear Drive' [m/s] * 'Instantanius Corner Radius' [m] ) / ( 'Instantanius Corner Radius' [m] - ( 'Rear track' [m] / 2 ) ) ) ) / 10" SampleRate="0" Unit="rad/s"/>
+  <MathExpression Id="Wheel Speed Difference Rear" DisplayUnit="m/s" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="( 'Wheel Speed Rear Left' [m/s] - 'Wheel Speed Rear Right' [m/s] ) * - 1" SampleRate="0" Unit="m/s"/>
+  <MathExpression Id="EST Expected WSDR" DisplayUnit="m/s" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="choose(( 'Corr Speed' [km/h] &gt; 10 AND abs('Vehicle Acceleration Lateral' [G]) &gt; .1 AND 'Coasting' == 1 ), ( 'Vehicle Acceleration Lateral' [m/s/s] / 'Corr Speed' [m/s] * 'Rear track' [m] ), invalid())" SampleRate="50" Unit="m/s"/>
+ </MathItems>
+</Maths>
