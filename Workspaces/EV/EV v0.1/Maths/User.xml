@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<Maths Locale="English_United States.1252" DefaultLocale="C" Id="User">
- <MathItems>
-  <MathExpression Id="3rd speed ideal limit" DisplayUnit="rpm" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="choose('Gear' &gt;= 3 AND 'Engine Speed' [rpm] &gt;= 10150, 'Engine Speed' [rpm], invalid())" SampleRate="0" Unit="rpm"/>
-  <MathExpression Id="3rd speed limiter" DisplayUnit="rpm" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="choose('Gear' &gt;= 3 AND 'Engine Speed' [rpm] &gt;= 11000, 'Engine Speed' [rpm], invalid())" SampleRate="0" Unit="rpm"/>
-  <MathExpression Id="4th gear engine speed" DisplayUnit="rpm" DisplayDPS="2" DisplayColorIndex="7" Interpolate="1" Script="choose('Gear' &gt;= 3, 'Engine Speed' [rpm], invalid())" SampleRate="0" Unit="rpm"/>
-  <MathExpression Id="distance reset" DisplayUnit="m" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="integrate('Corr Speed' [m/s], 1, range_change(&quot;Outings:Laps&quot;))" SampleRate="0" Unit="m"/>
- </MathItems>
-</Maths>

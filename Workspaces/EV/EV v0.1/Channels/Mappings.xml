@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<Items Locale="English_United States.1252" DefaultLocale="C">
- <Item From="Vehicle Dynamics Damper Position Rear Left" To="Suspension Damper Position Rear Left" Unit="mm" UnitlessOnly="0"/>
- <Item From="Vehicle Dynamics Damper Position Rear Right" To="Suspension Damper Position Rear Right" Unit="mm" UnitlessOnly="0"/>
-</Items>
