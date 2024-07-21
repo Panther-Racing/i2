@@ -1,1 +1,1 @@
-Please access the latest version of the i2 workspace based on version number.
+GitHub Tutorial for EV Circuit workspace changes coming soon. Please contact the DAQS lead for any issues.
