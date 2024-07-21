@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Maths Locale="English_United States.1252" DefaultLocale="C" Id="Tractive System">
+ <MathItems>
+  <MathExpression Id="Smoothed MC flow" DisplayDPS="2" DisplayColorIndex="3" Interpolate="1" Script="smooth('Motor Controller Coolant Flow:f0.1s' [l/min], 0.1)" SampleRate="0" Unit=""/>
+  <MathExpression Id="Motor Controler Estimated Energy Per Lap" DisplayUnit="kW.h" DisplayDPS="2" DisplayColorIndex="4" Interpolate="1" Script="integrate('Motor Controller Estimated Power Output' [kW], 1, range_change(&quot;Outings:Laps&quot;))" SampleRate="0" Unit="kJ"/>
+  <MathExpression Id="Estimated Endurance Energy Use" DisplayUnit="kW.h" DisplayDPS="2" DisplayColorIndex="5" Interpolate="1" Script="stat_max('Motor Controler Estimated Energy Per Lap' [kW.h], 1, range_change(&quot;Outings:Laps&quot;)) * ( 22 / stat_max('distance reset' [km], 1, range_change(&quot;Outings:Laps&quot;)) )" SampleRate="0" Unit="kW.h"/>
+  <MathExpression Id="Total Motor Controller Energy Use" DisplayUnit="kW.h" DisplayDPS="2" DisplayColorIndex="0" Interpolate="1" Script="integrate('Motor Controller Estimated Power Output' [kW])" SampleRate="0" Unit="kJ"/>
+  <MathExpression Id="Motor 30kW Power Limit data" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="Choose('Motor Controller Estimated Power Output' [kW] &gt; 30, 30, 'Motor Controller Estimated Power Output' [kW])" SampleRate="0" Unit="kW"/>
+  <MathExpression Id="Total 25kW Limited Motor Controller Energy Use" DisplayUnit="kW.h" DisplayDPS="2" DisplayColorIndex="5" Interpolate="1" Script="integrate('Motor 25kW Power Limit data' [kW])" SampleRate="0" Unit="kJ"/>
+  <MathExpression Id="Total 30 kW Limited Motor Controller Energy Use" DisplayUnit="kW.h" DisplayDPS="2" DisplayColorIndex="1" Interpolate="1" Script="integrate('Motor 30kW Power Limit data' [kW])" SampleRate="0" Unit="kJ"/>
+  <MathExpression Id="Motor 25kW Power Limit data" DisplayUnit="kW" DisplayDPS="2" DisplayColorIndex="5" Interpolate="1" Script="Choose('Motor Controller Estimated Power Output' [kW] &gt; 025, 25, 'Motor Controller Estimated Power Output' [kW])" SampleRate="0" Unit="kW"/>
+ </MathItems>
+</Maths>

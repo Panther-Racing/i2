@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Aliases Locale="English_United States.1252" DefaultLocale="C">
+ <Alias Id="Front Left Tire Tempature Inner">
+  <ChannelRefs>
+   <ChannelRef Id="Tire Temperature Front Left Channel 1"/>
+  </ChannelRefs>
+ </Alias>
+</Aliases>
